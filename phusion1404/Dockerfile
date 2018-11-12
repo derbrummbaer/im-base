@@ -72,7 +72,7 @@ RUN adduser --uid $USERID --gid $GROUPID --disabled-login --no-create-home --dis
 ############################################################
 
 RUN apt-get update; \
-apt-get install wget nano mc -y; \
+apt-get install wget nano mc tzdata -y; \
 apt-get dist-upgrade -y
 
 ############################################################
